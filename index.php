@@ -1,4 +1,4 @@
-<?
+<? 
 header("Content-Type: text/html; charset=utf-8");
 //http://habrahabr.ru/post/153731/
 session_start();
