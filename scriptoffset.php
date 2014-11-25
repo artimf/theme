@@ -18,7 +18,7 @@ SET  `description_short` = REPLACE(`description_short`, '>Demo<', 'target="_blan
 session_start();
 if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {return;}// Отвечаем только на Ajax
 $action = $_POST['action']; if (empty($action)) {return;}			// Можно передавать в скрипт разный action и в соответствии с ним выполнять разные действия.
-include_once '../simplehtmldom/simple_html_dom.php';
+include_once 'simplehtmldom/simple_html_dom.php';
 
 $url = $_POST['url']; if (empty($url)) return;					    // Получаем от клиента номер итерации
 $offset = $_POST['offset'];

@@ -4,7 +4,7 @@ header("Content-Type: text/html; charset=utf-8");
 session_start();
 $_SESSION['PARSE'] = '';
 
-//Читаем все ID в массив , сохраняем его в сессионую переменную, чтобы потом исключать уже сохраненные позиции
+//Читаем все ID в массив , сохраняем его в сессионую переменную, чтобы потом исключать уже сохраненные позиции.
 $cash_file="items_file.csv";
 $in = array();
 $_SESSION['ARR'] = $in;
@@ -27,7 +27,7 @@ echo '<!DOCTYPE html>';
   <body>
 
 	<div class="form">
-	  <input id="url" name="url" value ="http://themeforest.net/category/cms-themes?page=[DD]" style="width: 400px;">
+	  <input id="url" name="url" value ="http://themeforest.net/category/site-templates?page=[DD]" style="width: 400px;">
 	  <!-- http://themeforest.net/category/wordpress?page=[DD] -->
       <input id="offset" name="offset" type="hidden">
       <div class="progress" style="display: none;">

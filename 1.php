@@ -1,4 +1,4 @@
-<?header("Content-Type: text/html; charset=utf-8");?>
+<?header("Content-Type: text/html; charset=utf-8"); ?>
 <head>
     <title>1</title>
 	<link href="js/bootstrap.min.css" rel="stylesheet"> 
@@ -66,7 +66,7 @@ console.timeEnd('create list');
 <div class="row table table-striped">
   <div class="col-md-6"> 
 <?php
-		include_once '../simplehtmldom/simple_html_dom.php';
+		include_once 'simplehtmldom/simple_html_dom.php';
 		$HTML = file_get_html('1.html');
 		 $i=0;
 		 foreach($HTML->find('a')  as $a)
